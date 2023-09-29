@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wip{
+    background-image: url(./assets/work-in-progress.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
+    margin-top: 3rem;
+}
+
+.socialIcons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    left: 2rem;
+    padding: 1rem;
+}
+.fa-brands{
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.fa-brands:hover{
+    background-color: rgb(74,76,245);
+    color: whitesmoke;
+    border-color: white;
+}
