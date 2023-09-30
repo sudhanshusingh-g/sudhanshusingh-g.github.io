@@ -8,13 +8,325 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="socialIcons">
-        <i class="fa-brands fa-github" onclick="location='https://github.com/sudhanshusingh-g'"></i>
-        <i class="fa-brands fa-x-twitter" onclick="location='https://twitter.com/_sudhanshu97'"></i>
-        <i class="fa-brands fa-linkedin" onclick="location='https://www.linkedin.com/in/sudhanshusingh32/'"></i>
-    </div>
-    <div class="wip"></div>
+    <main>
+        <!-- Navigation bar -->
+        <nav>
+            <div class="container">
+                <header>
+                    <div class="logo">
+                        <img src="./assets/logo.png" alt="Name-Logo" />
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li class="menu-item"><a href="#about">About</a></li>
+                            <li class="menu-item"><a href="#project">Work</a></li>
+                            <li class="menu-item"><a href="#contact">Contact</a></li>
+                        </ul>
+                        <div class="switch">
+                            <!-- <i class="fa-solid fa-moon"></i> -->
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </header>
+                
+            </div>
+            
+        </nav>
+
+        <!-- HomePage -->
+        <section id="home">
+            <div class="container">
+                <div class="homepage">
+                    <div class="heroImage">
+                        <img src="./assets/heroImage.png" alt="Boy waving hand">
+                    </div>
+                    <div class="introSection">
+                        <div class="introText">
+                            <p>Namaste! I am</p>
+                            <h1>Sudhanshu Singh</h1>
+                            <p>
+                                passionate about designing and developing<br>solutions to complex
+                                problems through my web technology skills.
+                            </p>
+                        </div>
+                        <div class="ctaBtn">
+                            <button class="downloadBtn" onclick="location=''">
+                                <i class="fa-solid fa-download"></i>Download Resume
+                            </button>
+                            <button class="contactBtn" onclick="location='/#contact'">Contact</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="sectionText">
+                <p>Know more</p>
+                <h1>About me</h1>
+            </div>
+            
+            <div class="container">
+                <div class="aboutMeSection">
+                    <div class="profileImg">
+                        <img src="./assets/profile.png" alt="Profile-picture">
+                    </div>
+                    <div class="aboutText">
+                        <h2>Sudhanshu Singh</h2>
+                        <p class="role">Software Developer</p>
+                        <p><i class="fa-solid fa-briefcase"></i>1+ years of experience</p>
+                        <p><i class="fa-solid fa-graduation-cap"></i>Bachelor in <b>Computer Science</b></p>
+                        <div class="interests">
+                            <span><i class="fa-solid fa-robot"></i>Technology Geek</span>
+                            <span><i class="fa-solid fa-music"></i>Flute Player</span>
+                            <span><i class="fa-solid fa-peace"></i>Spiritual</span>
+                            <span><i class="fa-solid fa-compass"></i>Nomad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillSection">
+                    <h2>Skills</h2>
+                    <div class="frontend">
+                        <h3>Frontend</h3>
+                        <div class="html view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-html-48.png" alt="">
+                                </div>
+                                <strong>HTML</strong>
+                            </div>
+                            <div class="level">
+                                <div class="advance"></div>
+                            </div>
+                        </div>
+                        <div class="css view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-css-48.png" alt="">
+                                </div>
+                                <strong>CSS</strong>
+                            </div>
+                            <div class="level">
+                                <div class="advance"></div>
+                            </div>
+                        </div>
+                        <div class="js view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-js-48.png" alt="">
+                                </div>
+                                <strong>JavaScript</strong>
+                            </div>
+                            <div class="level">
+                                <div class="intermediate"></div>
+                            </div>
+                        </div>
+                        <div class="bootstrap view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-bootstrap-logo-48.png" alt="">
+                                </div>
+                                <strong>BootStrap</strong>
+                            </div>
+                            <div class="level">
+                                <div class="intermediate"></div>
+                            </div>
+                        </div>
+                        <div class="react view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-react-40.png" alt="">
+                                </div>
+                                <strong>React</strong>
+                            </div>
+                            <div class="level">
+                                <div class="beginner"></div>
+                            </div>
+                        </div>
     
+                    </div>
+                    <div class="backend">
+                        <h3>Backend</h3>
+                        <div class="sql view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-mysql-logo-50.png" alt="">
+                                </div>
+                                <strong>SQL</strong>
+                            </div>
+                            <div class="level">
+                                <div class="intermediate"></div>
+                            </div>
+                        </div>
+                        <div class="nodejs view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-nodejs-48.png" alt="">
+                                </div>
+                                <strong>NodeJS</strong>
+                            </div>
+                            <div class="level">
+                                <div class="beginner"></div>
+                            </div>
+                        </div>
+                        <div class="mdb view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-mongodb-48.png" alt="">
+                                </div>
+                                <strong>MongoDB</strong>
+                            </div>
+                            <div class="level">
+                                <div class="beginner"></div>
+                            </div>
+                        </div>
+                        <div class="ejs view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-ejs-48.png" alt="">
+                                </div>
+                                <strong>ExpressJS</strong>
+                            </div>
+                            <div class="level">
+                                <div class="beginner "></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools">
+                        <h3>Tools</h3>
+                        <div class="git view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-git-48.png" alt="">
+                                </div>
+                                <strong>Git</strong>
+                            </div>
+                            <div class="level">
+                                <div class="intermediate"></div>
+                            </div>
+                        </div>
+                        <div class="vscode view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-visual-studio-48.png" alt="">
+                                </div>
+                                <strong>VSCode</strong>
+                            </div>
+                            <div class="level">
+                                <div class="intermediate"></div>
+                            </div>
+                        </div>
+                        <div class="notion view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-notion-48.png" alt="">
+                                </div>
+                                <strong>Notion</strong>
+                            </div>
+                            <div class="level">
+                                <div class="beginner"></div>
+                            </div>
+                        </div>
+                        <div class="figma view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-figma-48.png" alt="">
+                                </div>
+                                <strong>Figma</strong>
+                            </div>
+                            <div class="level">
+                                <div class="intermediate"></div>
+                            </div>
+                        </div>
     
+                    </div>
+                    <div class="language">
+                        <h3>Language</h3>
+                        <div class="java view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-java-48.png" alt="">
+                                </div>
+                                <strong>Java</strong>
+                            </div>
+                            <div class="level">
+                                <div class="intermediate"></div>
+                            </div>
+                        </div>
+                        <div class="python view">
+                            <div class="name">
+                                <div class="skillLogo">
+                                    <img src="./assets/icons8-python-48.png" alt="">
+                                </div>
+                                <strong>Python</strong>
+                            </div>
+                            <div class="level">
+                                <div class="beginner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+
+        <!-- Projects -->
+
+        <section id="project">
+            <div class="sectionText">
+                <p>Some of my</p>
+                <h1>Projects</h1>
+            </div>
+            <div class="cardContainer">
+                <div class="card">
+                    <div class="project1"></div>
+                    <div class="projectBtn">
+                        <button class="liveSite"><i class="fa-solid fa-link"></i></button>
+                        <button class="sourceCode"><i class="fa-brands fa-github"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="project2"></div>
+                    <div class="projectBtn">
+                        <button class="liveSite"><i class="fa-solid fa-link"></i></button>
+                        <button class="sourceCode"><i class="fa-brands fa-github"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="project3"></div>
+                    <div class="projectBtn">
+                        <button class="liveSite"><i class="fa-solid fa-link"></i></button>
+                        <button class="sourceCode"><i class="fa-brands fa-github"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <!--Contact-->
+        <section id="contact">
+            <div class="socialIcons">
+                    <i class="fa-brands fa-github" onclick="location='https://github.com/sudhanshusingh-g'"></i>
+                    <i class="fa-brands fa-linkedin" onclick="location='https://www.linkedin.com/in/sudhanshusingh32/'"></i>
+                    <i class="fa-brands fa-x-twitter" onclick="location='https://twitter.com/_sudhanshu97'"></i>
+                    <i class="fa-brands fa-behance" onclick="location='https://www.behance.net/sudhanshusingh17'"></i>
+                    <i class="fa-brands fa-instagram" onclick="location='https://www.instagram.com/peace_coordinate/'"></i>
+                </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footerLogo">
+                <img src="./assets/logo.png" alt="Name-Logo" />
+            </div>
+            <a href="#home">Sudhanshu Singh</a>
+            <p>© All Rights Reserved.</p>
+        </footer>
+    </main>
 </body>
 </html>

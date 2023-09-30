@@ -1,42 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root{
+    --paragraph:rgb(79,79,79);
+    --heading:rgb(48, 48, 46);
+    --white:rgb(247, 247, 247);
+    --darkMode:rgb(51,51,51);
+    --primary:rgb(24,103,255);
+}
+
+
+/* CSS for all */
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
+   
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:var(--heading);
+}
+.container{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+section{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.wip{
-    background-image: url(./assets/work-in-progress.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 40%;
-    height: 100vh;
-    margin-top: 3rem;
+
+
+
+/* Navbar */
+nav{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.logo{
+    width: 12vw;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.menu ul{
+    display: none;
+}
+.switch{
+    border: 1px solid rgb(0, 0, 0);
+    width: 48px;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 3px 0px #00000054;
+    background-color: rgb(63, 56, 48);
+}
+.fa-moon{
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+.fa-circle{
+    font-size: 1.5rem;
+    color: orange;
+}
+.fa-bars{
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-.socialIcons{
-    position: absolute;
+
+
+/* HomePage */
+.homepage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heroImage{
+    width: 70%;
+    margin: 0 auto;
+}
+.introText{
+    margin: 1rem 0;
+}
+.introText p{
+    color: var(--paragraph);
+    font-weight: 400;
+    line-height: 1.5;
+}
+.introText h1{
+    color: var(--heading);
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.ctaBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+.ctaBtn button{
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.2rem;
+    width: 60%;
+}
+.downloadBtn{
+    border: none;
+    color: var(--white);
+    background-color: var(--primary);
+   font-weight: 700;
+}
+.contactBtn{
+    border: 1px solid var(--primary);
+    background-color: white;
+    color: var(--heading);
+    font-weight: 700;
+}
+
+
+/* About Section */
+section{
+    flex-direction: column;
+}
+.sectionText{
+    text-align: center;
+}
+.sectionText p{
+    color: var(--paragraph);
+}
+.sectionText h1{
+    color: var(--heading);
+}
+.profileImg{
+    width: 50%;
+    margin: 0 auto;
+}
+.aboutText{
+    margin: 1rem 0;
+}
+.aboutText h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+.role{
+    color: var(--paragraph);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.aboutText p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4rem;
+    line-height: 1.8;
+}
+
+.interests{
+    margin: 0.8rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.4rem;
+}
+.interests span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem;
+    border: 1px solid var(--darkMode);
+    border-radius: 1rem;
+}
+.skillSection{
+    margin: 2rem 0;
+}
+.skillSection h2{
+    margin-bottom: 1rem;
+    color: var(--heading);
+}
+.frontend,.backend,.tools,.language{
+    margin: 1rem 0;
+}
+
+.skillSection h3{
+    color: var(--primary);
+    margin: 0.8rem 0;
+    text-transform: uppercase;
+}
+.skillLogo{
+    width: 8%;
+}
+.name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 0.4rem 0;
+}
+.level{
+   background-color: rgba(212, 209, 209, 0.445);
+   height: 8px;
+   border-radius: 1rem;
+}
+.beginner{
+    width: 30%;
+    background-color: var(--primary);
+    height: 8px;
+    border-radius: 1rem;
+}
+.advance{
+    width: 95%;
+    background-color: var(--primary);
+    height: 8px;
+    border-radius: 1rem;
+}
+.intermediate{
+    width: 60%;
+    background-color: var(--primary);
+    height: 8px;
+    border-radius: 1rem;
+}
+
+
+/* Project Section */
+.cardContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    left: 2rem;
-    padding: 1rem;
 }
-.fa-brands{
+.card{
+    height: 50vh;
+    box-shadow: 0px 2px 4px 0px rgb(148, 148, 148);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    min-width: 350px;
+}
+.project1{
+    background-image: url(./assets/age-calculator-app.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    border-radius: 0.2rem;
+}
+.project2{
+    background-image: url(./assets/poject0.png);
+    background-position: top;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 0.2rem;
+}
+.project3{
+    background-image: url(./assets/screencapture-sudhanshusingh-g-github-io-zeera-ticket-management-2023-09-25-23_13_54.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    border-radius: 0.2rem;
+}
+.projectBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.projectBtn button{
     border: 1px solid black;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 2rem;
-    cursor: pointer;
+    display: none;
 }
-.fa-brands:hover{
-    background-color: rgb(74,76,245);
-    color: whitesmoke;
-    border-color: white;
+.projectBtn button:hover{
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+/* Contact section */
+
+
+.socialIcons{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 1rem;
+}
+.socialIcons .fa-brands{
+    padding: 0.4rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+}
+.socialIcons .fa-brands:hover{
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--white);
+}
+/* Footer section */
+footer{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgb(120, 199, 245);
+}
+.footerLogo{
+    width: 12%;
+    margin: 0 auto;
+}
+footer a{
+    font-weight: 700;
+}
+footer p{
+    font-size: 0.6rem;
+}
+
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    nav{
+        height: 10vh;
+    }
+    .logo{
+        width: 4vw;
+        height: 8vh;
+    }
+    .menu{
+        justify-content: center;
+        gap: 4rem;
+    }
+    
+    .fa-bars{
+        display: none;
+    }
+    .menu ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    /* Homepage */
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .homepage{
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: auto;
+    }
+
+    .heroImage{
+        width: 40%;
+    }
+    .introSection{
+        width: 60%;
+    }
+    .introText{
+        margin: 0;
+    }
+    .introText p{
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    .introText h1{
+        color: var(--heading);
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .ctaBtn{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .ctaBtn button{
+        padding: 1rem 2rem;
+        width: auto;
+        cursor: pointer;
+    }
+    .downloadBtn{
+        border: none;
+        color: var(--white);
+        background-color: var(--primary);
+       font-weight: 700;
+    }
+    .contactBtn{
+        border: 1px solid var(--primary);
+        background-color: white;
+        color: var(--heading);
+        font-weight: 700;
+    }
+    .contactBtn:hover{
+        background-color: var(--primary);
+        color: var(--white);
+    }
+
+
+    /* About */
+    
 }
