@@ -44,6 +44,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
 }
 
 
@@ -75,7 +77,7 @@ header{
     display: none;
 }
 .switch{
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(88, 88, 88);
     width: 48px;
     border-radius: 1.5rem;
     display: flex;
@@ -83,7 +85,8 @@ header{
     align-items: center;
     cursor: pointer;
     box-shadow: inset 0px 0px 3px 0px #00000054;
-    background-color: rgb(63, 56, 48);
+    background: rgb(151, 151, 151);
+    background: linear-gradient(90deg, rgb(150, 150, 150) 10%, rgb(255, 220, 154) 100%);
 }
 .fa-moon{
     font-size: 1.5rem;
@@ -91,11 +94,12 @@ header{
 }
 .fa-circle{
     font-size: 1.5rem;
-    color: orange;
+    color: rgb(255, 208, 0);
 }
 .fa-bars{
     font-size: 1.5rem;
     cursor: pointer;
+    display: flex;
 }
 
 
@@ -109,11 +113,11 @@ header{
     align-items: center;
 }
 .heroImage{
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 .introText{
-    margin: 1rem 0;
+    margin-bottom: 1.2rem;
 }
 .introText p{
     color: var(--paragraph);
@@ -133,13 +137,14 @@ header{
     gap: 0.5rem;
 }
 .ctaBtn button{
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
     border-radius: 0.2rem;
     width: 60%;
+    cursor: pointer;
 }
 .downloadBtn{
     border: none;
@@ -156,11 +161,9 @@ header{
 
 
 /* About Section */
-section{
-    flex-direction: column;
-}
 .sectionText{
     text-align: center;
+    margin: 2rem 0; 
 }
 .sectionText p{
     color: var(--paragraph);
@@ -169,16 +172,25 @@ section{
     color: var(--heading);
 }
 .profileImg{
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
+    padding: 0.5rem;
+}
+.aboutMeSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8rem 1rem 1rem 1rem;
+    box-shadow: 0px 2px 4px 0px rgb(148, 148, 148);
+    padding: 1rem 0;
 }
 .aboutText{
-    margin: 1rem 0;
+    text-align: center;
 }
 .aboutText h2{
     font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 0.4rem;
 }
 .role{
     color: var(--paragraph);
@@ -188,7 +200,7 @@ section{
 }
 .aboutText p{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 0.4rem;
     line-height: 1.8;
@@ -199,8 +211,8 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    gap: 0.4rem;
+    align-items: center;
+    gap: 0.5rem;
 }
 .interests span{
     display: flex;
@@ -209,26 +221,29 @@ section{
     gap: 0.4rem;
     padding: 0.5rem;
     border: 1px solid var(--darkMode);
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 .skillSection{
     margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
 }
 .skillSection h2{
-    margin-bottom: 1rem;
+    text-align: center;
     color: var(--heading);
-}
-.frontend,.backend,.tools,.language{
-    margin: 1rem 0;
 }
 
 .skillSection h3{
     color: var(--primary);
-    margin: 0.8rem 0;
     text-transform: uppercase;
 }
 .skillLogo{
-    width: 8%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
 }
 .name{
     display: flex;
@@ -265,7 +280,7 @@ section{
 /* Project Section */
 .cardContainer{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -333,6 +348,7 @@ section{
     padding: 0.4rem;
     border-radius: 2rem;
     border: 1px solid black;
+    cursor: pointer;
 }
 .socialIcons .fa-brands:hover{
     color: var(--white);
@@ -341,13 +357,13 @@ section{
 }
 /* Footer section */
 footer{
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    background-color: rgb(120, 199, 245);
+    background-color: rgb(142, 186, 211);
 }
 .footerLogo{
     width: 12%;
@@ -364,8 +380,11 @@ footer p{
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
-    nav{
-        height: 10vh;
+    .container{
+        width: 70vw;
+    }
+    #home{
+        height: 100vh;
     }
     .logo{
         width: 4vw;
@@ -377,7 +396,7 @@ footer p{
     }
     
     .fa-bars{
-        display: none;
+        display:none !important;
     }
     .menu ul{
         display: flex;
@@ -389,27 +408,17 @@ footer p{
     }
 
     /* Homepage */
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
     .homepage{
-        justify-content: center;
         flex-direction: row-reverse;
-        align-items: center;
-        height: auto;
     }
 
     .heroImage{
-        width: 40%;
+        width: 50%;
     }
     .introSection{
-        width: 60%;
+        width: 50%;
     }
-    .introText{
-        margin: 0;
-    }
+    
     .introText p{
         font-size: 1.2rem;
         line-height: 1.5;
@@ -420,28 +429,13 @@ footer p{
         font-size: 3rem;
     }
     .ctaBtn{
-        display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        gap: 0.5rem;
     }
     .ctaBtn button{
-        padding: 1rem 2rem;
-        width: auto;
-        cursor: pointer;
-    }
-    .downloadBtn{
-        border: none;
-        color: var(--white);
-        background-color: var(--primary);
-       font-weight: 700;
-    }
-    .contactBtn{
-        border: 1px solid var(--primary);
-        background-color: white;
-        color: var(--heading);
-        font-weight: 700;
+        padding:1rem 0.8rem;
+        width: 40%;
     }
     .contactBtn:hover{
         background-color: var(--primary);
@@ -450,5 +444,53 @@ footer p{
 
 
     /* About */
-    
+    .profileImg{
+        width: 25%;
+    }
+    .aboutMeSection{
+        box-shadow: none;
+        padding: 0;
+        margin: 1rem 0;
+        border-radius: 0;
+    }
+    .aboutText{
+        text-align: left;
+    }
+    .aboutText p{
+        justify-content: flex-start;
+    }
+    /* Skills */
+    .view{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skillLogo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .name{
+        width: 40%;
+    }
+    .level{
+        width: 60%;
+        height: 10px;
+    }
+    .beginner,.intermediate,.advance{
+        height: 10px;
+    }
+    /* Contact */
+    #contact{
+        height: 60vh;
+    }
+    .socialIcons .fa-brands{
+        padding: 0.8rem;
+        font-size: 2rem;
+    }
+    /* Footer */
+    .footerLogo{
+        width: 4%;
+    }
 }
