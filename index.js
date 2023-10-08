@@ -1,12 +1,16 @@
 const toggle=document.getElementById('switch');
 const toggleMode=document.querySelector('.lightMode');
 
-// toggle.onclick=function(){
-//     toggle.classList.toggle('dark');
-//     toggle.style.justifyContent='flex-end';
-// }
 
-toggle.onclick=function(){
-    toggle.classList.toggle('toggle')
-    toggleMode.classList.toggle('darkMode');
-};
+// toggle.addEventListener("click",()=>{
+
+//     if(toggle.style.justifyContent="flex-start"){
+//         toggle.style.justifyContent="flex-end";
+        
+//     }
+//     else{
+//         toggle.style.justifyContent="flex-start"
+//     }
+    
+// })
+
