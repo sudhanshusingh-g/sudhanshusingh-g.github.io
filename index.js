@@ -1,16 +1,12 @@
-const toggle=document.getElementById('switch');
-const toggleMode=document.querySelector('.lightMode');
+const toggleSwitch=document.querySelector(".lightMode");
+const darkModeIcon=document.querySelector(".fa-sun");
+const body=document.body;
+toggleSwitch.addEventListener("click",()=>{
+    body.classList.toggle("dark")
+    darkModeIcon.classList.toggle("fa-moon");
+    toggleSwitch.classList.toggle("darkMode");
+})
 
 
-// toggle.addEventListener("click",()=>{
 
-//     if(toggle.style.justifyContent="flex-start"){
-//         toggle.style.justifyContent="flex-end";
-        
-//     }
-//     else{
-//         toggle.style.justifyContent="flex-start"
-//     }
-    
-// })
 

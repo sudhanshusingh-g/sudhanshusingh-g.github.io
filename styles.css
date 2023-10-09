@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 :root{
-    --paragraph:rgb(79,79,79);
-    --heading:rgb(48, 48, 46);
-    --white:rgb(247, 247, 247);
-    --darkMode:rgb(51,51,51);
+    --color-dark: #3a3a3a;
+  --color-light: #ffffff;
+  
+  --color-text: var(--color-dark);
+  --color-background: var(--color-light);
     --primary:rgb(24,103,255);
+    
 }
+.dark{
+    --color-text: var(--color-light);
+    --color-background: var(--color-dark);
 
+}
 
 /* CSS for all */
 html{
@@ -20,7 +26,9 @@ html{
     box-sizing: border-box;
 }
 body{
-   
+    background-color: var(--color-background);
+    color: var(--color-text);
+    transition: background-color 0.25s ease, color 0.25s ease;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -30,7 +38,7 @@ li{
 }
 a{
     text-decoration: none;
-    color:var(--heading);
+    color:var(--color-text);
 }
 .container{
     width: 80vw;
@@ -59,6 +67,9 @@ nav{
     width: 100%;
     height: auto;
 }
+.dark nav{
+    background-color: var(--color-background);
+}
 .logo{
     width: 12vw;
 }
@@ -77,22 +88,7 @@ header{
 .menu ul{
     display: none;
 }
-#switch{
-    width: 56px;
-    height: 28px;
-    border-radius: 2rem;
-    background: rgba(255, 246, 228, 0.945);
-    transition: 0.5s all ease-in-out;
-    box-shadow: inset 0 4px 2px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.toggle{
-    display: flex;
-    justify-content: flex-end;
-    background:linear-gradient(to right, #6e6e6e,rgb(65, 65, 65)) !important;
-}
+
 .lightMode{
     display: flex;
     align-items: center;
@@ -101,6 +97,7 @@ header{
     height: 28px;
     background: linear-gradient(to bottom, #ffd698,rgba(255, 153, 0, 0.384));
     border-radius: 50%;
+    cursor: pointer;
 }
 .darkMode{
     width: 28px;
@@ -112,6 +109,9 @@ header{
     color: #ff7402;
 }
 
+.fa-moon{
+    color: whitesmoke;
+}
 .fa-bars{
     font-size: 1.5rem;
     cursor: pointer;
@@ -136,12 +136,12 @@ header{
     margin-bottom: 1.2rem;
 }
 .introText p{
-    color: var(--paragraph);
+    color: var(--color-text);
     font-weight: 400;
     line-height: 1.5;
 }
 .introText h1{
-    color: var(--heading);
+    color: var(--color-text);
     font-weight: 700;
     font-size: 2.2rem;
 }
@@ -164,14 +164,14 @@ header{
 }
 .downloadBtn{
     border: none;
-    color: var(--white);
+    color: var(--color-light);
     background-color: var(--primary);
    font-weight: 700;
 }
 .contactBtn{
     border: 1px solid var(--primary);
-    background-color: white;
-    color: var(--heading);
+    background: none;
+    color: var(--color-text);
     font-weight: 700;
 }
 
@@ -180,13 +180,9 @@ header{
 .sectionText{
     text-align: center;
     margin: 2rem 0; 
+    color: var(--color-text);
 }
-.sectionText p{
-    color: var(--paragraph);
-}
-.sectionText h1{
-    color: var(--heading);
-}
+
 .profileImg{
     width: 40%;
     margin: 0 auto;
@@ -209,7 +205,7 @@ header{
     font-weight: 700;
 }
 .role{
-    color: var(--paragraph);
+    color: var(--color-dark);
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -236,7 +232,7 @@ header{
     align-items: center;
     gap: 0.4rem;
     padding: 0.5rem;
-    border: 1px solid var(--darkMode);
+    border: 1px solid var(--color-text);
     border-radius: 2rem;
 }
 .skillSection{
@@ -248,7 +244,7 @@ header{
 }
 .skillSection h2{
     text-align: center;
-    color: var(--heading);
+    color: var(--color-dark);
 }
 
 .skillSection h3{
@@ -309,14 +305,14 @@ header{
     min-width: 350px;
 }
 .project1{
-    background-image: url(./assets/age-calculator-app.png);
+    background-image: url(./assets/images/age-calculator-app.png);
     background-position: center;
     background-size: cover;
     height: 100%;
     border-radius: 0.2rem;
 }
 .project2{
-    background-image: url(./assets/poject0.png);
+    background-image: url(./assets/images/poject0.png);
     background-position: top;
     background-size:cover;
     background-repeat: no-repeat;
@@ -324,7 +320,7 @@ header{
     border-radius: 0.2rem;
 }
 .project3{
-    background-image: url(./assets/screencapture-sudhanshusingh-g-github-io-zeera-ticket-management-2023-09-25-23_13_54.png);
+    background-image: url(./assets/images/screencapture-sudhanshusingh-g-github-io-zeera-ticket-management-2023-09-25-23_13_54.png);
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -346,7 +342,7 @@ header{
 .projectBtn button:hover{
     background-color: var(--primary);
     color: var(--white);
-    border: 2px solid var(--white);
+    border: 2px solid var(--color-light);
 }
 
 /* Contact section */
@@ -363,13 +359,13 @@ header{
 .socialIcons .fa-brands{
     padding: 0.4rem;
     border-radius: 2rem;
-    border: 1px solid black;
+    border: 1px solid var(--color-text);
     cursor: pointer;
 }
 .socialIcons .fa-brands:hover{
-    color: var(--white);
+    color: var(--color-light);
     background-color: var(--primary);
-    border-color: var(--white);
+    border-color: var(--color-dark);
 }
 /* Footer section */
 footer{
@@ -379,7 +375,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    background-color: rgb(142, 186, 211);
+    background-color: var(--color-background);
 }
 .footerLogo{
     width: 12%;
@@ -440,7 +436,6 @@ footer p{
         line-height: 1.5;
     }
     .introText h1{
-        color: var(--heading);
         font-weight: 700;
         font-size: 3rem;
     }
@@ -455,7 +450,7 @@ footer p{
     }
     .contactBtn:hover{
         background-color: var(--primary);
-        color: var(--white);
+        color: var(--color-light);
     }
 
 
