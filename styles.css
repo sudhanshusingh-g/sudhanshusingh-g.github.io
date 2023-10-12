@@ -54,7 +54,6 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 2rem 0;
 }
 
 
@@ -73,6 +72,14 @@ nav{
 .logo{
     width: 12vw;
 }
+nav a{
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    transition: all 0.1s ease-in-out;
+}
+nav a:hover{
+    color: var(--primary);
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -86,15 +93,28 @@ header{
     gap: 2rem;
 }
 .menu ul{
-    display: none;
+    position: fixed;
+    top: 80px;
+    left: 100%;
+    height: 100vh;
+    background: var(--color-background);
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.menu ul li{
+    margin: 2rem 0;
+}
+.menu ul li a{
+    font-size: 2rem;
 }
 
 .lightMode{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     background: linear-gradient(to bottom, #ffd698,rgba(255, 153, 0, 0.384));
     border-radius: 50%;
     cursor: pointer;
@@ -114,8 +134,6 @@ header{
 }
 .fa-bars{
     font-size: 1.5rem;
-    cursor: pointer;
-    display: flex;
 }
 
 
@@ -406,19 +424,28 @@ footer p{
         justify-content: center;
         gap: 4rem;
     }
-    
+    nav a:hover{
+        color: var(--color-light);
+        background-color: var(--primary);
+    }
+    .lightMode{
+        width: 40px;
+        height: 30px;
+    }
     .fa-bars{
         display:none !important;
     }
     .menu ul{
+        height: 8vh;
+        position: static;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 1.5rem;
-        font-size: 1.2rem;
-        font-weight: 500;
+        gap: 1rem;
     }
-
+    .menu ul li a{
+        font-size: 1.2rem;
+    }
     /* Homepage */
     .homepage{
         flex-direction: row-reverse;
