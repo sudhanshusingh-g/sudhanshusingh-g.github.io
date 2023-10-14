@@ -269,12 +269,14 @@ header{
     color: var(--primary);
     text-transform: uppercase;
 }
+
 .skillLogo{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
 }
+
 .name{
     display: flex;
     justify-content: flex-start;
@@ -315,6 +317,8 @@ header{
     align-items: center;
     gap: 1rem;
 }
+
+
 .card{
     height: 50vh;
     box-shadow: 0px 2px 4px 0px rgb(148, 148, 148);
@@ -322,57 +326,56 @@ header{
     border-radius: 0.4rem;
     min-width: 350px;
     transition: all 0.3s ease-in-out;
-    position: relative;
 }
 .projectBtn{
-    transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem 0;
 }
 .projectBtn button{
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 2rem;
     font-size: 1rem;
     border: 1px solid var(--primary);
     cursor: pointer;
     background-color: var(--color-background);
     color: var(--color-text);
-    
 }
+
+
 .projectBtn button:hover{
     background-color: var(--primary);
 }
+
+
 .project1{
     background-image: url(./assets/images/age-calculator-app.png);
     background-position: center;
     background-size: cover;
-    height: 100%;
     border-radius: 0.2rem;
 }
+
+
 .project2{
     background-image: url(./assets/images/poject0.png);
     background-position: top;
     background-size:cover;
     background-repeat: no-repeat;
-    height: 100%;
     border-radius: 0.2rem;
 }
+
+
 .project3{
     background-image: url(./assets/images/screencapture-sudhanshusingh-g-github-io-zeera-ticket-management-2023-09-25-23_13_54.png);
     background-position: center;
     background-size: cover;
-    height: 100%;
     border-radius: 0.2rem;
 }
 
+.fade{
+    height: 80%;
+}
 
 
 
@@ -534,14 +537,10 @@ footer p{
         height: 10px;
     }
     /* Project */
-    .fade{
-        backface-visibility: hidden;
-    }
-    .fade:hover{
-        opacity: 0.5;
-    }
-    .card:hover .projectBtn,button{
-        opacity: 1;
+   .card{
+   }
+    .projectBtn{
+        
     }
 
     /* Contact */
