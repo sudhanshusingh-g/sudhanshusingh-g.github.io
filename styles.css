@@ -388,7 +388,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     gap: 1rem;
 }
 .socialIcons .fa-brands{
