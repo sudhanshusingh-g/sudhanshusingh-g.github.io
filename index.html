@@ -1,38 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sudhanshu Singh</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
+      integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <main>
-        <h1>Sunday को आना</h1>
-        <img src="./assets/images/babu.jpeg" alt="">
-        <!-- Navigation bar -->
-        
+      <!-- Navigation bar -->
+      <nav>
+        <div class="logo">
+          <img src="./assets/images/favicon-32x32.png" alt="Logo" />
+        </div>
+        <div class="btnDiv">
+          <i id="theme" class="fa-solid fa-sun"></i>
+          <button><i class="fa-solid fa-download"></i>Resume</button>
+        </div>
+      </nav>
 
-        <!-- HomePage -->
-        
-        <!-- About -->
-    
-        
+      <!-- HomePage -->
+      <section id="home">
+        <div class="heading">
+          <div class="title">
+            <h1>Namaste 🙏🏻</h1>
+            <p>
+              I am <strong>Sudhanshu Singh</strong>, with a keen eye for
+              aesthetics and a continuous quest for learning, I bring a unique
+              blend of creativity and technical expertise to every project I
+              undertake, leveraging frontend technologies such as HTML5, CSS3,
+              and JavaScript frameworks.
+            </p>
+            <div class="techStack">
+              <img src="./assets/images/icons8-html-48.png" alt="html" />
+              <img src="./assets/images/icons8-css-48.png" alt="css" />
+              <img src="./assets/images/icons8-js-48.png" alt="js" />
+              <img
+                src="./assets/images/icons8-bootstrap-logo-48.png"
+                alt="bootstrap"
+              />
+              <img src="./assets/images/icons8-react-40.png" alt="react" />
 
-        <!-- Projects -->
+              <img src="./assets/images/icons8-nodejs-48.png" alt="nodejs" />
+              <img src="./assets/images/icons8-ejs-48.png" alt="expressjs" />
+              <img src="./assets/images/icons8-mongodb-48.png" alt="mongodb" />
 
-        
+              <img src="./assets/images/icons8-java-48.png" alt="java" />
+              <img src="./assets/images/icons8-python-48.png" alt="python" />
+            </div>
+          </div>
+          <div class="socialIcons">
+            <a href="mailto:sudsingh32@gmail.com">
+              <i class="fa-regular fa-envelope"></i
+            ></a>
+            <a href="https://github.com/sudhanshusingh-g"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sudhanshusingh32/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/_sudhanshu97"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.behance.net/sudhanshusingh17"><i class="fa-brands fa-behance"></i></a>
+            
+          </div>
+        </div>
+        <div class="projects">
+          <div class="cardContainer">
+            <div class="card">
+              <img src="./assets/images/vedantu.PNG" alt="" />
+            </div>
+            <div class="projectTitle">
+              <h4>Vedantu Website Clone</h4>
+            </div>
+            <div class="btn">
+              <a href="https://github.com/sudhanshusingh-g/vedantuWebsite">
+                <button class="fa-brands fa-github"></button>
+              </a>
+              <a href="https://sudhanshusingh-g.github.io/vedantuWebsite/">
+                <button class="fa-solid fa-arrow-up-right-from-square"></button>
+              </a>
+              
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="card">
+              <img src="./assets/images/passworrd-generator.jpg" alt="" />
+            </div>
+            <div class="projectTitle">
+              <h4>Password Generator</h4>
+            </div>
+            <div class="btn">
+              <a href="https://createpwd.netlify.app/"><button class="fa-brands fa-github"></button></a>
+              <a href="https://github.com/sudhanshusingh-g/password-generator"><button class="fa-solid fa-arrow-up-right-from-square"></button></a>
+              
+              
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="card">
+              <img
+                src="./assets/images/screencapture-sudhanshusingh-g-github-io-zeera-ticket-management-2023-09-25-23_13_54.png"
+                alt=""
+              />
+            </div>
+            <div class="projectTitle">
+              <h4>Ticket Management Tool</h4>
+            </div>
+            <div class="btn">
+              <a href="https://github.com/sudhanshusingh-g/ticket-management-tool"><button class="fa-brands fa-github"></button></a>
+              <a href="https://sudhanshusingh-g.github.io/ticket-management-tool/"><button class="fa-solid fa-arrow-up-right-from-square"></button></a>
+              
+              
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Tech Stack -->
 
-        <!--Contact-->
-       
-
-        <!-- Footer -->
-        
+      <!-- Footer -->
+      <footer>
+        <p>Made with <i class="fa-solid fa-heart"></i></p>
+        <p>
+          All rights reserved.© <u><strong>Sudhanshu Singh</strong></u>
+        </p>
+      </footer>
     </main>
 
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
